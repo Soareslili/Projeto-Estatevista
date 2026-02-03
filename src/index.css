@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import "tailwindcss";
+
+
+
+
+
+@theme {
+
+  --color-background: #F7F9FB;
+  --color-foreground: #0F2A3D;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0F2A3D;
+
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #0F2A3D;
+
+  --color-primary: #0D344D;
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: #F1F3F5;
+  --color-secondary-foreground: #0F2A3D;
+
+  --color-muted: #E8EBEE;
+  --color-muted-foreground: #556B7A;
+
+  --color-accent: #F28A2E;
+  --color-accent-foreground: #FFFFFF;
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+
+  --color-border: #E1E6EA;
+  --color-input: #E1E6EA;
+  --color-ring: #F28A2E;
+
+  --color-radius: 0.75rem;
+
+  /* Custom design tokens */
+  --color-petrol-dark: #0A2C40;
+  --color-petrol: #0D344D;
+  --color-petrol-light: #1F4E66;
+  --color-orange: #F28A2E;
+  --color-orange-hover: #E0701F;
+  --color-gray-light: #F5F7F9;
+  --color-gray: #D6DBE0;
+
+  /* Gradients */
+  --color-gradient-hero: linear-gradient(135deg,
+      rgba(10, 44, 64, 0.9) 0%,
+      rgba(31, 78, 102, 0.85) 100%);
+
+  --color-gradient-card: linear-gradient(180deg,
+      #FFFFFF 0%,
+      #F7F9FB 100%);
+
+  --color-gradient-accent: linear-gradient(135deg,
+      #F28A2E 0%,
+      #E0701F 100%);
+
+  /* Shadows */
+  --color-shadow-sm: 0 2px 8px -2px rgba(15, 42, 61, 0.08);
+  --color-shadow-md: 0 8px 24px -8px rgba(15, 42, 61, 0.12);
+  --color-shadow-lg: 0 16px 48px -12px rgba(15, 42, 61, 0.15);
+  --color-shadow-card: 0 4px 20px -4px rgba(15, 42, 61, 0.08);
+  --color-shadow-card-hover: 0 12px 32px -8px rgba(15, 42, 61, 0.15);
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+}
+
+.dark {
+  --color-background: #081C26;
+  --color-foreground: #F8FAFC;
+
+  --color-card: #0F2A3D;
+  --color-card-foreground: #F8FAFC;
+
+  --color-popover: #0F2A3D;
+  --color-popover-foreground: #F8FAFC;
+
+  --color-primary: #F28A2E;
+  --primary-foreground: #FFFFFF;
+
+  --color-secondary: #183646;
+  --color-secondary-foreground: #F8FAFC;
+
+  --color-muted: #1C3C4D;
+  --color-muted-foreground: #9FB2BF;
+
+  --color-accent: #F28A2E;
+  --color-accent-foreground: #FFFFFF;
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
+
+  --color-border: #1E4254;
+  --color-input: #1E4254;
+  --color-ring: #F28A2E;
+}
+
+
+
+@layer utilities {
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--secondary));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--petrol-light));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--petrol));
+}
