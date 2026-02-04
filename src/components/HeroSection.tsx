@@ -16,25 +16,25 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 pt-24 pb-32">
+      <div className="container-custom relative z-10 pt-24 pb-32 flex flex-col items-center text-center ml-[12%]">
         <div className="max-w-3xl">
           <p className="text-accent font-medium mb-4 opacity-0 animate-fade-up">
-            Premium Real Estate Investment
+            Investimento Imobiliário Premium
           </p>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 opacity-0 animate-fade-up delay-100">
-            Invest Today in Your{' '}
-            <span className="text-gradient">Dream Home</span>
+           Invista hoje em seu{' '}
+            <span className="text-gradient">Casa dos sonhos</span>
           </h1>
-          <p className="text-primary-foreground/80 text-lg md:text-xl mb-8 max-w-xl opacity-0 animate-fade-up delay-200">
-            Discover exceptional properties and investment opportunities in prime locations. 
-            Let us guide you to your perfect property.
+          <p className="text-primary-foreground/80 text-lg md:text-xl ml-[14%] mb-8 max-w-xl opacity-0 animate-fade-up delay-200">
+           Descubra propriedades excepcionais e oportunidades de investimento em localizações privilegiadas. 
+            Deixe-nos guiá-lo até o imóvel perfeito.
           </p>
-          <div className="flex flex-wrap gap-4 opacity-0 animate-fade-up delay-300">
-            <Button variant="hero" size="xl">
-              View Property
+          <div className="flex flex-wrap gap-4 opacity-0 animate-fade-up delay-300 ml-[24%]">
+            <Button variant="hero" size="xl" className='cursor-pointer '>
+             Ver propriedade
             </Button>
-            <Button variant="heroOutline" size="xl">
-              Contact Now
+            <Button variant="heroOutline" size="xl" className='cursor-pointer '>
+              Entre em contato agora
             </Button>
           </div>
         </div>
@@ -45,24 +45,24 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
               <div className="lg:col-span-1">
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
-                  Keywords
+                 Palavras-chave
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter keywords..."
+                  placeholder="Insira palavras-chave..."
                   className="w-full px-4 py-3 rounded-xl bg-secondary border-0 focus:ring-2 focus:ring-accent outline-none transition-all"
                 />
               </div>
               
               <div className="lg:col-span-1">
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
-                  Type
+                  Tipo
                 </label>
                 <div className="relative">
                   <select className="w-full px-4 py-3 rounded-xl bg-secondary border-0 appearance-none focus:ring-2 focus:ring-accent outline-none transition-all cursor-pointer">
-                    <option>Sell or Rent</option>
-                    <option>For Sale</option>
-                    <option>For Rent</option>
+                    <option>Venda ou Aluguel</option>
+                    <option>Para Venda</option>
+                    <option>Para Aluguel</option>
                   </select>
                   <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" size={18} />
                 </div>
@@ -70,15 +70,15 @@ const HeroSection = () => {
               
               <div className="lg:col-span-1">
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
-                  Property Type
+                  Tipo de Propriedade
                 </label>
                 <div className="relative">
                   <select className="w-full px-4 py-3 rounded-xl bg-secondary border-0 appearance-none focus:ring-2 focus:ring-accent outline-none transition-all cursor-pointer">
-                    <option>All Types</option>
-                    <option>House</option>
-                    <option>Apartment</option>
-                    <option>Office</option>
-                    <option>Townhome</option>
+                    <option>Todos os Tipos</option>
+                    <option>Casa</option>
+                    <option>Apartamento</option>
+                    <option>Escritório</option>
+                    <option>Residência urbana</option>
                   </select>
                   <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" size={18} />
                 </div>
@@ -86,11 +86,11 @@ const HeroSection = () => {
               
               <div className="lg:col-span-1">
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
-                  Location
+                  Localização
                 </label>
                 <div className="relative">
                   <select className="w-full px-4 py-3 rounded-xl bg-secondary border-0 appearance-none focus:ring-2 focus:ring-accent outline-none transition-all cursor-pointer">
-                    <option>All Locations</option>
+                    <option>Todas as Localizações</option>
                     <option>New York</option>
                     <option>Los Angeles</option>
                     <option>Miami</option>
@@ -102,15 +102,15 @@ const HeroSection = () => {
               
               <div className="lg:col-span-1">
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
-                  Amenities
+                Comodidades
                 </label>
                 <div className="relative">
                   <select className="w-full px-4 py-3 rounded-xl bg-secondary border-0 appearance-none focus:ring-2 focus:ring-accent outline-none transition-all cursor-pointer">
-                    <option>Select Amenities</option>
-                    <option>Pool</option>
-                    <option>Garage</option>
-                    <option>Garden</option>
-                    <option>Gym</option>
+                    <option>Selecione Comodidades</option>
+                    <option>Piscina</option>
+                    <option>Garagem</option>
+                    <option>Jardim</option>
+                    <option>Ginásio</option>
                   </select>
                   <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" size={18} />
                 </div>
@@ -119,7 +119,7 @@ const HeroSection = () => {
               <div className="lg:col-span-1 flex items-end">
                 <Button variant="accent" size="lg" className="w-full gap-2">
                   <Search size={18} />
-                  Search
+                  Pesquisar
                 </Button>
               </div>
             </div>

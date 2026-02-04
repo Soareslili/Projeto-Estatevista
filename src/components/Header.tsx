@@ -33,7 +33,7 @@ const Header = () => {
             }`}>
 
             <div className="container-custom">
-                <nav className="flex items-center justify-between">
+                <nav className="flex items-center justify-around">
                     <a href="#home" className="flex items-center gap-2">
                         <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-heading font-bold text-xl ${isScrolled ? 'bg-primary text-primary-foreground' : 'bg-accent text-accent-foreground'
                             }`}>
@@ -61,7 +61,8 @@ const Header = () => {
                     {/* CTA Button */}
                     <div className="hidden md:block">
                         <Button variant="accent" size="lg">
-                            Book Now
+
+                            Reserve agora
                         </Button>
                     </div>
 
@@ -99,8 +100,8 @@ const Header = () => {
                     </div>
                 )}
 
-           
-        </div>
+
+            </div>
 
         </header >
     )
