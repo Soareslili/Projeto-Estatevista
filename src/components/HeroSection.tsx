@@ -16,8 +16,8 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 pt-24 pb-32 flex flex-col items-center text-center ml-[12%]">
-        <div className="max-w-3xl">
+      <div className="container-custom relative z-10 pt-24 pb-32 flex flex-col items-center">
+        <div className="max-w-3xl items-center text-center">
           <p className="text-accent font-medium mb-4 opacity-0 animate-fade-up">
             Investimento Imobiliário Premium
           </p>
@@ -40,7 +40,7 @@ const HeroSection = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="mt-16 opacity-0 animate-fade-up delay-400">
+        <div className=" w-310 mt-12 opacity-0 animate-fade-up delay-400 ml-10">
           <div className="bg-card rounded-2xl p-4 md:p-6 shadow-lg">
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
               <div className="lg:col-span-1">
