@@ -117,7 +117,7 @@ const HeroSection = () => {
               </div>
               
               <div className="lg:col-span-1 flex items-end">
-                <Button variant="accent" size="lg" className="w-full gap-2">
+                <Button variant="accent" size="lg" className="w-full gap-2 cursor-pointer">
                   <Search size={18} />
                   Pesquisar
                 </Button>

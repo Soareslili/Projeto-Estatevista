@@ -23,6 +23,7 @@ const Header = () => {
         { name: 'Serviços', href: '#services' },
         { name: 'Sobre', href: '#about' },
         { name: 'Depoimentos', href: '#testimonials' },
+        { name: 'Blog', href: '#blog' },
         { name: 'Contato', href: '#contact' },
     ]
 
@@ -60,7 +61,7 @@ const Header = () => {
 
                     {/* CTA Button */}
                     <div className="hidden md:block">
-                        <Button variant="accent" size="lg">
+                        <Button variant="accent" size="lg" className="cursor-pointer">
 
                             Reserve agora
                         </Button>

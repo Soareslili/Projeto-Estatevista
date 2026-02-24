@@ -4,23 +4,23 @@ const AboutSection = () => {
   const features = [
     {
       icon: Shield,
-      title: 'Trusted Partner',
-      description: 'Over 15 years of experience serving clients with integrity and professionalism.',
+      title: 'Parceiro Confiável',
+      description: 'Mais de 15 anos de experiência servindo clientes com integridade e profissionalismo.',
     },
     {
       icon: Users,
-      title: 'Expert Team',
-      description: 'Our dedicated professionals guide you through every step of your property journey.',
+      title: 'Equipe Especializada',
+      description: 'Nossos profissionais dedicados orientam você em cada etapa do seu percurso imobiliário.',
     },
     {
       icon: Award,
-      title: 'Premium Portfolio',
-      description: 'Access to exclusive listings and premium properties in prime locations.',
+      title: 'Portfolio Premium',
+      description: 'Acesso a listagens exclusivas e propriedades premium em locais privilegiados.',
     },
     {
       icon: Clock,
-      title: '24/7 Support',
-      description: 'Round-the-clock assistance to address all your real estate needs.',
+      title: '24/7 Suporte',
+      description: 'Assistência round-the-clock para atender todas as suas necessidades imobiliárias.',
     },
   ];
 
@@ -30,30 +30,30 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ml-20">
           {/* Content */}
           <div>
-            <p className="text-accent font-medium mb-2">About Us</p>
+            <p className="text-accent font-medium mb-2">Sobre Nós</p>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Your Trusted Partner in Real Estate Excellence
+              Seu parceiro de confiança em excelência imobiliária
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              At EstateVista, we believe everyone deserves to find their perfect property. 
-              With over 15 years of experience in the real estate market, we have helped 
-              thousands of clients find their dream homes and make smart investment decisions.
+              Na EstateVista acreditamos que todos merecem encontrar o imóvel perfeito.
+              Com mais de 15 anos de experiência no mercado imobiliário, temos ajudado
+              milhares de clientes encontram as casas dos seus sonhos e tomam decisões de investimento inteligentes.
             </p>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Our team of dedicated professionals combines local market expertise with 
-              cutting-edge technology to deliver exceptional results. We pride ourselves 
-              on personalized service, transparent communication, and unwavering commitment 
-              to our clients' success.
+              Nossa equipe de profissionais dedicados combina experiência no mercado local com
+              tecnologia de ponta para oferecer resultados excepcionais. Nós nos orgulhamos
+              em serviço personalizado, comunicação transparente e compromisso inabalável
+              para o sucesso dos nossos clientes.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-4 bg-secondary rounded-2xl">
                 <span className="font-heading text-4xl font-bold text-accent">500+</span>
-                <p className="text-muted-foreground text-sm mt-1">Properties Sold</p>
+                <p className="text-muted-foreground text-sm mt-1">Propriedades Vendidas</p>
               </div>
               <div className="text-center p-4 bg-secondary rounded-2xl">
                 <span className="font-heading text-4xl font-bold text-accent">98%</span>
-                <p className="text-muted-foreground text-sm mt-1">Client Satisfaction</p>
+                <p className="text-muted-foreground text-sm mt-1">Satisfação do Cliente</p>
               </div>
             </div>
           </div>

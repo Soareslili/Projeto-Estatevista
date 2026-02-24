@@ -5,8 +5,8 @@ const PropertyTypes = () => {
     { icon: Home, name: 'Casa', count: 122 },
     { icon: Building2, name: 'Apartamento', count: 248 },
     { icon: Briefcase, name: 'Escritório', count: 87 },
-    { icon: Building, name: 'Townhome', count: 156 },
-    { icon: TreePine, name: 'Bungalow', count: 64 },
+    { icon: Building, name: 'Residência urbana', count: 156 },
+    { icon: TreePine, name: 'Casa de campo', count: 64 },
   ];
 
   return (

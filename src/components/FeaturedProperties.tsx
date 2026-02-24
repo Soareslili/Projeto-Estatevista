@@ -14,8 +14,8 @@ const FeaturedProperties = () => {
       id: 1,
       image: property1,
       tag: 'Sale',
-      title: 'Modern Family Villa',
-      location: 'Beverly Hills, CA',
+      title: 'Villa Familiar Moderna',
+      location: 'Alphaville – Barueri, SP',
       beds: 5,
       baths: 4,
       garage: 2,
@@ -25,8 +25,8 @@ const FeaturedProperties = () => {
       id: 2,
       image: property2,
       tag: 'Rent',
-      title: 'Luxury City Apartment',
-      location: 'Manhattan, NY',
+      title: 'Apartamento de luxo na cidade',
+      location: 'Itaim Bibi – São Paulo, SP',
       beds: 3,
       baths: 2,
       garage: 1,
@@ -36,8 +36,8 @@ const FeaturedProperties = () => {
       id: 3,
       image: property3,
       tag: 'Sale',
-      title: 'Classic Townhouse',
-      location: 'Boston, MA',
+      title: 'Moradia Clássica',
+      location: 'Jardim Paulista – São Paulo, SP',
       beds: 4,
       baths: 3,
       garage: 2,
@@ -47,8 +47,8 @@ const FeaturedProperties = () => {
       id: 4,
       image: property4,
       tag: 'Rent',
-      title: 'Skyline Penthouse',
-      location: 'Chicago, IL',
+      title: 'Cobertura Horizonte',
+      location: 'Vila Nova Conceição – São Paulo, SP',
       beds: 2,
       baths: 2,
       garage: 1,
@@ -58,8 +58,8 @@ const FeaturedProperties = () => {
       id: 5,
       image: property5,
       tag: 'Sale',
-      title: 'Executive Office Space',
-      location: 'San Francisco, CA',
+      title: 'Espaço de escritório executivo',
+      location: 'Itaim Bibi – São Paulo, SP',
       beds: 0,
       baths: 2,
       garage: 4,
@@ -69,8 +69,8 @@ const FeaturedProperties = () => {
       id: 6,
       image: property6,
       tag: 'Sale',
-      title: 'Charming Bungalow',
-      location: 'Austin, TX',
+      title: 'Casa de Campo',
+      location: 'Capivari – Campos do Jordão, SP',
       beds: 3,
       baths: 2,
       garage: 1,
@@ -140,7 +140,7 @@ const FeaturedProperties = () => {
                   <span className="font-heading text-xl font-bold text-accent">
                     {property.price}
                   </span>
-                  <Button variant="petrol" size="sm">
+                  <Button variant="petrol" size="sm" className='cursor-pointer'>
                     Ver Detalhes
                   </Button>
                 </div>
